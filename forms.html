@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+
+<body>
+    <h2>This is HTML forms tutorial</h2>
+
+    <form action="backend.php">
+        <div>
+            <!-- gives a label and also automatically shift ur cursor to the respective field you want to enter data in -->
+            <label for="name">Name:</label>
+            <!-- text box -->
+            <input type="text" id="name" name="myName">
+        </div>
+        <br>
+        <div>
+            <label for="role">Role:</label>
+            <input type="text" id="role" name="myRole">
+        </div>
+        <br>
+        <div>
+            <label for="email">Email:</label>
+            <!-- EMAIL -->
+            <input type="email" id="email" name="myEmail">
+        </div>
+        <br>
+        <div>
+            <label for="date">Date:</label>
+            <!-- DATE -->
+            <input type="date" id="date" name="myDate">
+        </div>
+        <br>
+        <div>
+            <label >Gender:</label>
+            <!-- radio buttons -->
+            <input type="radio" name="myGender">Male</input>
+            <input type="radio" name="myGender">Female</input>
+        </div>
+        <br>
+        <div>
+            <label for="no">Bonus:</label>
+            <!-- number input -->
+            <input id="no" type="number" name="myNumber">
+        </div>
+        <br>
+        <div>
+            <label>Skills:</label>
+            <!-- checkboxes -->
+            <input type="checkbox" name="mySkills">HTML5</input>
+            <input type="checkbox" name="mySkills">CSS</input>
+            <input type="checkbox" name="mySkills">Javascript</input>
+        </div>
+        <br>
+        <div>
+            <div>
+            <label for="your">Write about yourself:</label>
+            </div>
+            <div>
+                <textarea id="your" name="myText" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+        <br>
+        <div>
+            <label for="car">Select car: </label>
+            <select name="Mycar" id="car">
+                <option>Mercedes</option>
+                <option selected>Ferrari</option>
+                <option>Lamborghini</option>
+                <option>Buggati</option>
+                <option>F1 race car</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <!-- submit button -->
+            <input type="submit" value="Submit now">
+            <!-- reset form -->
+            <input type="reset" value="Reset form">
+        </div>
+
+    </form>
+</body>
+
+</html>
